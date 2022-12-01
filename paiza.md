@@ -1,5 +1,22 @@
 
 
+
+# [D003:掛け算のリスト](https://paiza.jp/career/challenges/34/retry)
+2022/12/01 21:55
+## Anwer
+    a = int(input())
+
+    for i in range(1,10):
+        if i == 9:
+            print(a*i, end="")
+        else:
+            print(a*i, end=" ")
+> for文では、range(1,10)で1~9の数値に対して処理をすることが可能
+
+> if i == 9:で9の値で分岐し処理する（つまり、最後だけ処理する）
+
+> end=" "で終端に修飾できる
+
 # [D228:【2022年Xmas問題】クリスマスの時間](https://paiza.jp/career/challenges/593/retry)
 2022/11/30 20:55
 ## Anwer
