@@ -1,3 +1,20 @@
+# [We Love Golf](https://atcoder.jp/contests/abc165/tasks/abc165_a)
+2022/12/02 23:51
+## Anwer
+    a = int(input())
+    b,c = map(int, input().split())
+
+    exist = False
+
+
+    for i in range(b,c+1):
+        if i % a == 0:
+            exist = True
+            
+    print("OK" if exist else "NG")
+> 
+
+
 # [Buying Sweets](https://atcoder.jp/contests/abc087/tasks/abc087_a)
 2022/12/01 21:59
 ## Anwer
