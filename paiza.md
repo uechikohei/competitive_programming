@@ -1,5 +1,34 @@
 
+# [D004:文字列の結合](https://paiza.jp/career/challenges/36/retry)
+2022/12/02 23:24
+## Anwer
+    #後述for文で繰り返す数
+    a = int(input())
 
+    #for文でbに文字列をリストで格納
+    b = [input() for i in range(a)]
+
+    #for文、bにインデックス付与
+    for i, e in enumerate(b):
+        #インデックスの値が0のとき（1文字目の処理）
+        if i == 0:
+            #以下内容を出力
+            print("Hello", end=" ")
+        #eに代入した要素をすべて出力
+        print(e, end="")
+        #i番目が、[b要素の数-1]番目(5要素であれば、-1で4番目を表現)
+        #つまり、最終文字の処理は"."それ以外は","を付与
+        if i == len(b) -1:
+            print(".")
+        else:
+            print(",",end="")
+> enumerateによるインデックス付与
+
+> lenによる要素数のカウント
+
+> -1付与し、最終処理を分岐する
+
+> [神記事](http://taustation.com/python3-for-loop-first-and-last-execution/)
 
 # [D003:掛け算のリスト](https://paiza.jp/career/challenges/34/retry)
 2022/12/01 21:55
