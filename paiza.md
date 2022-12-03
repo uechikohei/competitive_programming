@@ -1,4 +1,14 @@
-
+# [D086:門松の作成](https://paiza.jp/challenges/222/ready)
+2022/12/03 21:39
+## Anwer
+    a = int(input())
+    #比率を入力
+    b,c,d = (3,5,7)
+    #1割の長さを算出。※ここでintで括ったりroundで四捨五入すると出力で誤差出現する
+    e = (a/3)
+    #1割の長さfloat型で計算後、roundで四捨五入することで誤差がなくなる
+    print(round(e*15))
+> 
 # [D004:文字列の結合](https://paiza.jp/career/challenges/36/retry)
 2022/12/02 23:24
 ## Anwer

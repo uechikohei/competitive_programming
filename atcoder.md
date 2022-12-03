@@ -1,3 +1,19 @@
+# [RGB Cards](https://atcoder.jp/contests/abc064/tasks/abc064_a)
+2022/12/03 21:26
+## Anwer
+    #int型では結合できないので、str型で入力
+    r,g,b = map(str,input().split())
+    #結合したので、int型へ変換
+    a = int(r+g+b)
+
+    #4の倍数で分岐
+    if a % 4 == 0:
+        #True処理
+        print("YES")
+    else:
+        #False処理
+        print("NO")
+> 
 # [We Love Golf](https://atcoder.jp/contests/abc165/tasks/abc165_a)
 2022/12/02 23:51
 ## Anwer
