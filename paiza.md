@@ -1,3 +1,12 @@
+# [D143:制動距離の計算](https://paiza.jp/challenges/352/ready)
+2022/12/05 22:15
+## Anwer
+    m,v,f = map(int,input().split())
+
+    a = m*(v*v)/(2*f)
+
+    print(int(a))
+> 
 # [D134:タイトルの長さ](https://paiza.jp/challenges/332/show)
 2022/12/05 0:08
 ## Anwer
