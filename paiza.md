@@ -1,3 +1,29 @@
+# [D197:買い物のポイント](https://paiza.jp/career/challenges/501/retry)
+2022/12/07 8:34
+## Anwer
+    a = int(input())
+
+    if a >= 1000:
+        print(int(a*0.1))
+    else:
+        print(0)
+> 
+
+
+# [D219:犬猿の仲](https://paiza.jp/career/challenges/565/retry)
+2022/12/07 8:25
+## Anwer
+    a = input()
+    b = ("saru")
+    #文字列をあらかじめ大文字、または小文字に変換することで大文字小文字を区別することなく比較する
+
+    if a.lower() != b.lower():
+        print("Yes")
+    else:
+        print("No")
+> 
+
+
 # [D133:株の利益](https://paiza.jp/career/challenges/331/retry)
 2022/12/06 22:38
 ## Anwer
