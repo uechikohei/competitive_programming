@@ -1,3 +1,19 @@
+# [D133:株の利益](https://paiza.jp/career/challenges/331/retry)
+2022/12/06 22:38
+## Anwer
+    x,a,b = [int(input()) for i in range (3)]
+
+    counter = 0
+
+    while x >= a:
+        
+        x = x-a
+        
+        counter+=1
+> 
+
+    
+print((counter*b)-(counter*a))
 # [D143:制動距離の計算](https://paiza.jp/challenges/352/ready)
 2022/12/05 22:15
 ## Anwer

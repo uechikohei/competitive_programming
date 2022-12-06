@@ -1,3 +1,23 @@
+# [Payment](https://atcoder.jp/contests/abc173/tasks/abc173_a)
+2022/12/06 8:20
+## Anwer
+> 
+    """
+    お店で N 円の商品を買います。
+
+    1000 円札のみを使って支払いを行う時、お釣りはいくらになりますか？
+
+    ただし、必要最小限の枚数の 1000 円札で支払いを行うものとします。
+    """
+
+    a = int(input())
+
+    #余りが0のとき、0出力
+    if (a%1000) == 0:
+        print(0)
+    #0以外の場合、1000円から余りを引いて出力
+    else:
+        print(1000-(a%1000))
 # [Biscuit Generator](https://atcoder.jp/contests/abc125/tasks/abc125_a)
 2022/12/05 8:13
 ## Anwer
