@@ -1,3 +1,44 @@
+# [Takoyaki](https://atcoder.jp/contests/abc176/tasks/abc176_a)
+2022/12/12 22:12
+## Anwer
+    """
+    高橋君はたこ焼きが好きです。
+
+    たこ焼き器を使うと、1 度に最大で X 個のたこ焼きを作ることができます。
+    これにかかる時間は作る個数によらず T 分です。
+
+    N 個のたこ焼きを作るためには何分必要ですか？
+    """
+    n,x,t = map(int,input().split())
+
+    if n%x ==0:
+        #割り切れるとき
+        nx = (int(n/x))
+        print(nx*t)
+    else:
+    #割り切れないとき、切り捨て（＋１で表現）
+        nx = (int(n/x)+1)
+        print(nx*t)
+> 切り捨ての表現方法、割り切れる値以外は＋１
+
+# [Duplex Printing](https://atcoder.jp/contests/abc157/tasks/abc157_a)
+2022/12/12 21:09
+## Anwer
+    """
+    高橋君は、全 N ページから成る書類を両面印刷します。
+    両面印刷では、1 枚の紙に 2 ページ分のデータを印刷することが出来ます。
+    
+    最小で何枚の紙が必要か求めてください。
+    """
+    
+    a = int(input())
+    
+    if a%2==0:
+        print(int(a/2))
+    else:
+        print(int((a/2)+1))
+> 切り捨ての表現方法、割り切れる値以外は＋１
+
 # [Payment](https://atcoder.jp/contests/abc173/tasks/abc173_a)
 2022/12/06 8:20
 ## Anwer
