@@ -1,3 +1,61 @@
+
+# [今更基本的なFizzBuzz]()
+2022/12/14 20:37
+## Anwer
+    """
+    FizzBuzz
+
+    3でも5でも割り切れる整数：FizzBuzz
+    それ以外の整数の内、3で割り切れる整数：Fizz
+    それ以外の整数の内、5で割り切れる整数：Buzz
+    それ以外の整数：その値を出力
+    """
+
+    a = int(input())
+
+    if a%3==0 and a%5==0:
+        print("FizzBuzz")
+    elif a%3==0:
+        print("Fizz")
+    elif a%5==0:
+        print("Buzz")
+    else:
+        print(a)
+> 
+
+# [We Love Golf](https://atcoder.jp/contests/abc165/tasks/abc165_a)
+2022/12/14 20:37
+## Anwer
+    """
+    ジャンボ高橋君はゴルフの練習をすることにしました。
+
+    ジャンボ高橋君の目標は飛距離を K の倍数にすることですが、ジャンボ高橋君の出せる飛距離の範囲は A 以上 B 以下です。
+
+    目標の達成が可能であれば OK と、不可能であれば NG と出力してください。
+    """
+
+    """
+    for文を用いた「探索」で表現できる
+
+    A以上B以下の整数値の範囲に、Kの倍数が存在するか判定
+
+    if文短縮形では、existの中身がFalseなら偽の処理
+    中身がTrueなら正の処理となる
+    """
+
+    k = int(input())
+
+    a,b = map(int,input().split())
+
+    exist = False
+
+    for i in range (a,b+1):
+        if i%k==0:
+            exist = True
+
+
+    print("OK" if exist else "NG")
+> 
 # [033 - Not Too Bright（★2） ](https://atcoder.jp/contests/typical90/tasks/typical90_ag)
 2022/12/13 20:15
 ## Anwer
