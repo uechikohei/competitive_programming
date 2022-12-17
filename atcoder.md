@@ -1,4 +1,84 @@
+# [Maxi-Buying](https://atcoder.jp/contests/abc206/tasks/abc206_a)
+2022/12/17 15:45
+## Anwer
+    """
+    ABC 国の消費税率は 8 パーセントです。
+    ABC 国にはエナジードリンク屋さんがあります。ここでは、エナジードリンク 1 本を、税抜き N 円で販売しています。
+    ここに消費税を加算した後の金額は ⌊1.08×N⌋ 円となります。ただし、実数 x に対し、⌊x⌋ は x 以下の最大の整数を表します。
+    この金額が定価の 206 円より安いなら Yay! 、定価と等しいなら so-so 、定価より高いなら :( と出力して下さい。
+    """
 
+    n = int(input())
+
+    an = int(1.08*n)
+
+    if an < 206:
+        print("Yay!")
+    elif an == 206:
+        print("so-so")
+    else:
+        print(":(")
+> 
+
+# [Lucky 7](https://atcoder.jp/contests/abc162/tasks/abc162_a)
+2022/12/17 15:44
+## Anwer
+    """
+    3 桁の整数 N が与えられます。N のいずれかの桁に数字の 7 は含まれますか？
+
+    含まれるなら Yes を、含まれないなら No を出力してください。
+    """
+    n = input()
+
+    nn = [int(i) for i in list(n)]
+
+    if 7 in nn:
+        print("true")
+    else:
+        print("false")
+> 
+
+
+# [FizzBuzz Sum](https://atcoder.jp/contests/abc162/tasks/abc162_b)
+2022/12/16 21:59
+## Anwer
+"""
+FizzBuzz列
+i が 3 でも 5 でも割り切れるなら
+ =FizzBuzz
+そうではなく i が 3 で割り切れるなら
+ =Fizz
+そうではなく i が 5 で割り切れるなら
+ =Buzz
+そうではないなら、
+ =i
+FizzBuzz列の N 項目までに含まれる数の和を求めてください。
+"""
+
+n = int(input())
+# 和を求めるため変数初期化
+counter = 0
+# 1~n数までを繰り返して処理
+for i in range(1,n+1):
+    # 3で割り切れる&5で割り切れる
+    if i%3==0 and i%5==0:
+        # 何もしない、空欄だとNG
+        pass
+    # 3で割り切れる
+    elif i%3==0:
+        # 何もしない、空欄だとNG
+        pass
+    # 5で割り切れる
+    elif i%5==0:
+        # 何もしない、空欄だとNG
+        pass
+    # それ以外
+    else:
+        # それ以外の値の和を表現
+        counter += i
+# 繰り返し処理が終わったときの和を出力
+print(counter)
+> 
 
 # [Some Sums](https://atcoder.jp/contests/abc083/tasks/abc083_b)
 2022/12/16 0:03
