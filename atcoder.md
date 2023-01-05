@@ -1,3 +1,36 @@
+# [B - Battle](https://atcoder.jp/contests/abc164/tasks/abc164_b)
+2023/01/05 22:22
+## Anwer
+    """
+    高橋君と青木君がモンスターを闘わせます。
+
+    高橋君のモンスターは体力が A で攻撃力が B です。 青木君のモンスターは体力が C で攻撃力が D です。
+
+    高橋君→青木君→高橋君→青木君→... の順に攻撃を行います。
+    攻撃とは、相手のモンスターの体力の値を自分のモンスターの攻撃力のぶんだけ減らすことをいいます。
+    このことをどちらかのモンスターの体力が 0 以下になるまで続けたとき
+    先に自分のモンスターの体力が 0 以下になった方の負け、そうでない方の勝ちです。
+
+    高橋君が勝つなら Yes、負けるなら No を出力してください。
+
+    解説：https://qiita.com/u2dayo/items/ed686afffea40c9253ba#b%E5%95%8F%E9%A1%8Cbattle
+    """
+
+    a, b, c, d = map(int, input().split())
+
+    # 先行が生き残るターン数
+    # 体力÷攻撃力の切り上げを求める
+    senkou = (a + d - 1) // d
+
+    # 後攻が生き残るターン数
+    # 体力÷攻撃力の切り上げを求める
+    koukou = (c + b - 1) // b
+    if senkou >= koukou:
+        print("Yes")
+    else:
+        print("No")
+
+
 # [A - Sheep and Wolves ](https://atcoder.jp/contests/abc164/tasks/abc164_a)
 2023/01/05 6:45
 ## Anwer
@@ -159,42 +192,42 @@
 # [FizzBuzz Sum](https://atcoder.jp/contests/abc162/tasks/abc162_b)
 2022/12/16 21:59
 ## Anwer
-"""
-FizzBuzz列
-i が 3 でも 5 でも割り切れるなら
- =FizzBuzz
-そうではなく i が 3 で割り切れるなら
- =Fizz
-そうではなく i が 5 で割り切れるなら
- =Buzz
-そうではないなら、
- =i
-FizzBuzz列の N 項目までに含まれる数の和を求めてください。
-"""
+    """
+    FizzBuzz列
+    i が 3 でも 5 でも割り切れるなら
+    =FizzBuzz
+    そうではなく i が 3 で割り切れるなら
+    =Fizz
+    そうではなく i が 5 で割り切れるなら
+    =Buzz
+    そうではないなら、
+    =i
+    FizzBuzz列の N 項目までに含まれる数の和を求めてください。
+    """
 
-n = int(input())
-# 和を求めるため変数初期化
-counter = 0
-# 1~n数までを繰り返して処理
-for i in range(1,n+1):
-    # 3で割り切れる&5で割り切れる
-    if i%3==0 and i%5==0:
-        # 何もしない、空欄だとNG
-        pass
-    # 3で割り切れる
-    elif i%3==0:
-        # 何もしない、空欄だとNG
-        pass
-    # 5で割り切れる
-    elif i%5==0:
-        # 何もしない、空欄だとNG
-        pass
-    # それ以外
-    else:
-        # それ以外の値の和を表現
-        counter += i
-# 繰り返し処理が終わったときの和を出力
-print(counter)
+    n = int(input())
+    # 和を求めるため変数初期化
+    counter = 0
+    # 1~n数までを繰り返して処理
+    for i in range(1,n+1):
+        # 3で割り切れる&5で割り切れる
+        if i%3==0 and i%5==0:
+            # 何もしない、空欄だとNG
+            pass
+        # 3で割り切れる
+        elif i%3==0:
+            # 何もしない、空欄だとNG
+            pass
+        # 5で割り切れる
+        elif i%5==0:
+            # 何もしない、空欄だとNG
+            pass
+        # それ以外
+        else:
+            # それ以外の値の和を表現
+            counter += i
+    # 繰り返し処理が終わったときの和を出力
+    print(counter)
 > 
 
 # [Some Sums](https://atcoder.jp/contests/abc083/tasks/abc083_b)
